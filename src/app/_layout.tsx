@@ -1,6 +1,7 @@
 import { useFonts } from "@expo-google-fonts/montserrat";
 import { SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
+import { StatusBar } from "react-native";
 import fonts from "../config/theme/fonts";
 import "../styles/global.css";
 
@@ -13,5 +14,17 @@ export default function RootLayout() {
     }
   }, [fontsLoaded]);
 
-  return <Stack />;
+  return (
+    <>
+      <Stack
+        screenOptions={{
+          headerStyle: { backgroundColor: "#000" },
+          headerTintColor: "#fff",
+
+          headerShown: false,
+        }}
+      />
+      <StatusBar barStyle="default" />
+    </>
+  );
 }

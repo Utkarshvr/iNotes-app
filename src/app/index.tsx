@@ -1,8 +1,10 @@
 import { useColorScheme } from "react-native";
-import FoldersScreen from "../screens/FoldersScreen";
+import NoteScreen from "../screens/NoteScreen";
 
 export default function Index() {
   const colorScheme = useColorScheme();
 
-  return <FoldersScreen />;
+  return <NoteScreen />;
+  // return <NotesListScreen />;
+  // return <FoldersScreen />;
 }
