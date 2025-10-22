@@ -1,15 +1,8 @@
-import { Text, View } from "react-native";
+import { useColorScheme } from "react-native";
+import FoldersScreen from "../screens/FoldersScreen";
 
 export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
-  );
+  const colorScheme = useColorScheme();
+
+  return <FoldersScreen />;
 }
