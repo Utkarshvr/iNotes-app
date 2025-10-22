@@ -4,11 +4,10 @@ import {
     KeyboardAvoidingView,
     Platform,
     ScrollView,
-    StatusBar,
     Text,
     TextInput,
     TouchableOpacity,
-    View,
+    View
 } from "react-native";
 
 export default function NoteScreen() {
@@ -31,8 +30,6 @@ export default function NoteScreen() {
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       className="flex-1 bg-black"
     >
-      <StatusBar barStyle="light-content" />
-
       {/* Header */}
       <View className="px-4 pb-4">
         <View className="flex-row justify-between items-center">
